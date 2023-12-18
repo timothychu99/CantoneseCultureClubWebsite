@@ -1,4 +1,4 @@
 CCC Website,
 
-Main = stable version
-Master = in progress version
+* Main = stable version
+* Master = in progress version
