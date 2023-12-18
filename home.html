@@ -19,13 +19,14 @@
 
 <div class="topnav-right">
   <li>  
-    <a href="#"> About </a>  
-    </li>  
-    <li>  
-    <a href="#"> Events </a>  
-    </li>  
-    <li> <a href="#"> Contacts </a>  
-    </li>      
+    <a onclick="moveToSection('about_section')"> About </a>  
+  </li>  
+  <li>  
+    <a onclick="moveToSection('events_section')"> Events </a>  
+  </li>  
+  <li> 
+    <a onclick="moveToSection('contacts_section')"> Contacts </a>  
+  </li>      
 </div>  
 
 </ul>  
@@ -34,7 +35,7 @@
 
 <img src="DimSum1.jpg" style="height: 100%; max-width: 100%;" class="center">
 
-<div class="about">
+<div class="about" id="about_section">
   <h1> About </h1>
   <p>
     CCC @ UCSD is a cultural based club that welcomes all UCSD students, both undergraduates and graduates.
@@ -46,7 +47,7 @@
 </div>
 
 
-<div class="about">
+<div class="about" id="meet_section">
   <h1> Meet the Board </h1>
     <div class="grid1">
       <div class="square">   </div>
@@ -58,7 +59,7 @@
 
 </div>
 
-<div class="about">
+<div class="about" id="events_section">
   <h1> Events </h1>
   <div class="grid2">
     <div class="square">   </div>
@@ -67,7 +68,7 @@
   </div>
 </div>
 
-<div class="about">
+<div class="about" id="contacts_section">
   <h1> Contacts </h1>
 
   <!---SOCIAL MEDIA BUTTONS-->
@@ -82,9 +83,18 @@
 
   <script>
     // Add your JavaScript code here
-    
-    var url = "https://dhyumcha.ucsd.edu"
-//   document.location.href = url;
+    function moveToSection(id) {
+        var element = document.getElementById(id);
+      var headerOffset = 130;
+        var elementPosition = element.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+      });   
+    }
+
   </script>
 </body>
 </html>
