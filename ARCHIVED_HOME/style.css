@@ -18,6 +18,12 @@ p {
   font-family: 'Poppins', 'sans-serif';
 }
 
+
+
+
+
+
+
 /*----HEADER-------------------------*/
 header {  
   background-color: rgb(255, 255, 255);  
@@ -28,7 +34,7 @@ header {
   height: 120px;  
   font-size: 30px;
   align-items: center;  
-  box-shadow: 0 0  3px 0 rgb(77, 77, 77);  
+  box-shadow: 0 0  3px 0 #65D2FB;  
 }  
 header * {  
   display: inline;  
@@ -42,6 +48,34 @@ header li a {
 }  
 
 /*-----NAVBAR--------------*/
+.navbar{
+  box-shadow: 0 0  10px 0 #FFC6D9;  
+}
+
+.nav-item{
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+
+.navbar-brand{
+  font-size: 2.2rem;
+  margin: 1rem;
+}
+
+.nav-item:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2.5px #65D2FB;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-item:hover:after { transform: scaleX(1); }
+
+.nav-item:hover:after { 
+  transform-origin:100% 50%; 
+}
+
 .topnav-right {
   padding: 38px 8px 0px 0px;
   margin-right: 20px;
