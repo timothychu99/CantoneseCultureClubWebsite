@@ -137,3 +137,15 @@ header li a {
 .fa:hover {
   opacity: 0.7;
 }
+
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer {
+  margin-top: auto;
+}

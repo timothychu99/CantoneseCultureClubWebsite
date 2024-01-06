@@ -1,0 +1,22 @@
+.R_img {
+    margin: -0.2rem 0 0 -0.2rem; height: 1.2rem; width: 1.2rem;
+}
+
+.link {
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.link:hover {
+    opacity: 0.7;
+}
+
+.food_img {
+    grid-column: span 12;
+}
+
+@media screen and (max-width: 1750px) {
+    .food_img {
+        grid-column: span 30;
+    }
+}

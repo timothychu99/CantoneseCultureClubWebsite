@@ -59,11 +59,11 @@ p {
 /*-----FOOTER---------------*/
   .footer-top {
     clear: both; 
-    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
   }
   
   .footer-bottom {
-    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
     clear: both;
   }
 
@@ -84,4 +84,17 @@ p {
   }
   .fa:hover {
     opacity: 0.7;
+  }
+
+
+/*---Aligning the footer---*/
+  .flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .footer {
+    margin-top: auto;
   }

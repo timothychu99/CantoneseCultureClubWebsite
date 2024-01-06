@@ -1,0 +1,36 @@
+div.about-content {
+    grid-column: span 18; 
+    margin: 1.5rem;
+}
+
+div.dimsum_img {
+    grid-column: span 12;
+}
+
+img.img_full {
+    width: 100%;
+    display: block;
+}
+img.img_trunc {
+    display: none;
+}
+
+@media screen and (max-width: 1750px) {
+    div.about-content {
+        grid-column: span 30; 
+        margin: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    div.dimsum_img {
+        grid-column: span 30;
+    }
+    img.img_full {
+        display: none;    
+    }
+    img.img_trunc {
+        width: 100%;
+        display: block;
+    }    
+}
+
+  
