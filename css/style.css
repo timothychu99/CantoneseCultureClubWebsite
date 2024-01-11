@@ -17,21 +17,21 @@ p {
   font-size: 1rem;
 }
 
-
 /*-----NAVBAR--------------*/
   .navbar{
-    height: 10rem;
     box-shadow: 0 0  1rem 0 #FFC6D9;  
     border-bottom: .2rem solid #FFC6D9;
+    padding: 0 7% 0 7%;
   }
   
   .nav-item{
     margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-right: 0;
   }
   
   .navbar-brand{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 1rem;
   }
   
@@ -98,3 +98,38 @@ p {
   .footer {
     margin-top: auto;
   }
+
+
+  /* views for header */
+  .lg-view{
+    display:inline-block;
+  }
+ 
+ .sm-view{
+    display:none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .lg-view{
+       display:none;
+    }
+
+    .sm-view{
+       display:inline-block;
+       position: relative;
+       top: 15px;
+    }
+
+    .navbar-brand{
+      font-size: 1.2rem;
+    }
+}
+
+/**/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+ }
+
+ .dropdown-menu {
+  margin: 0.125rem 0 0;
+}

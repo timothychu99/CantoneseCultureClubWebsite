@@ -1,6 +1,7 @@
 div.about-content {
     grid-column: span 18; 
     margin: 1.5rem;
+    padding: 0 7% 0 0%;
 }
 
 div.dimsum_img {
@@ -20,6 +21,7 @@ img.img_trunc {
         grid-column: span 30; 
         margin: 1.5rem;
         margin-top: 0.5rem;
+        padding: 0 7% 0 7%;
     }
     div.dimsum_img {
         grid-column: span 30;
