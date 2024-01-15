@@ -3,7 +3,7 @@
 }
 
 .contact_content{
-    padding: 0 7% 0 7%
+    padding: 0 0 0 0;
 }
 
 .link {
@@ -23,4 +23,33 @@
     .food_img {
         grid-column: span 30;
     }
+    .contact_content{
+        padding: 0 7% 0 7%
+    }
+    .food_img {
+        animation:goout 1.8s;
+        animation-timing-function:ease-out;
+        animation-delay:1.2s;
+        animation-fill-mode:forwards, none;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation:goout 1.8s;
+        -webkit-animation-timing-function:ease-out;
+        -webkit-animation-delay:1.2s;
+        -webkit-animation-fill-mode: forwards, none;
+      }
+
 }
+ 
+  @keyframes goout {
+    0% {
+        margin-top: 0%;
+    }
+    20% {
+        margin-top: -14%;
+    }
+    100% {
+        margin-top: -73.5%;
+    }
+  }
+  

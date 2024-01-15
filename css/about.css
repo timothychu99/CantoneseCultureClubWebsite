@@ -33,6 +33,62 @@ img.img_trunc {
         width: 100%;
         display: block;
     }    
+
+
+    .expand {
+        display: block;
+        width: 100%;
+        animation-name: goin;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
 }
 
-  
+  .img_trunc {
+    animation:goout 1.5s;
+    animation-timing-function:ease-out;
+    animation-delay:1.5s;
+    animation-fill-mode:forwards, none;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation:goout 1.5s;
+    -webkit-animation-timing-function:ease-out;
+    -webkit-animation-delay:1.2s;
+    -webkit-animation-fill-mode: forwards, none;
+  }
+
+  @keyframes goout {
+    0% {
+        margin-top: 0%;
+    }
+    20% {
+        margin-top: -8%;
+    }
+    100% {
+        margin-top: -46%;
+    }
+  }
+
+  @keyframes goin {
+    0% {
+        margin-top: -46%;
+    }
+    20% {
+        margin-top: -38%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+  }
+
+  @media screen and (min-width: 1751px) {
+
+  .expand {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+}
