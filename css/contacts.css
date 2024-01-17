@@ -3,6 +3,7 @@
 }
 
 .contact_content{
+    grid-column: span 18;
     padding: 0 0 0 0;
 }
 
@@ -24,7 +25,8 @@
         grid-column: span 30;
     }
     .contact_content{
-        padding: 0 7% 0 7%
+        grid-column: span 30;
+        padding: 0 7% 0 7%;
     }
     .food_img {
         animation:goout 1.8s;
