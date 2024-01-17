@@ -1,0 +1,90 @@
+div.event-content {
+    grid-column: span 18; 
+    margin: 1.5rem;
+    padding: 0 7% 0 0%;
+}
+
+
+@media screen and (max-width: 1750px) {
+    .event-content {
+        grid-column: span 30; 
+        margin: 1.5rem;
+        margin-top: 0.5rem;
+        padding: 0 7% 0 7%;
+    }
+    .dimsum_img {
+        grid-column: span 30;
+    }
+    .img_full {
+        display: none;    
+    }
+    .img_trunc {
+        width: 100%;
+        display: block;
+    }    
+
+
+    .expand {
+        display: block;
+        width: 100%;
+        animation-name: goin;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+}
+
+  .img_trunc {
+    animation:goout 1.5s;
+    animation-timing-function:ease-out;
+    animation-delay:1.5s;
+    animation-fill-mode:forwards, none;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation:goout 1.5s;
+    -webkit-animation-timing-function:ease-out;
+    -webkit-animation-delay:1.2s;
+    -webkit-animation-fill-mode: forwards, none;
+  }
+
+  @keyframes goout {
+    0% {
+        margin-top: 0%;
+    }
+    20% {
+        margin-top: -8%;
+    }
+    100% {
+        margin-top: -46%;
+    }
+  }
+
+  @keyframes goin {
+    0% {
+        margin-top: -46%;
+    }
+    20% {
+        margin-top: -38%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+  }
+
+
+@media (max-width: 768px) {
+    #big_img {
+      max-width: 29rem;
+    }
+    .event-content .row {
+      display: flex;
+      display: -ms-flex;
+      flex-direction: column;
+    }
+    .event-content .row .first {
+      order: 2;
+      margin: auto;
+      width: 100%;
+    }
+  }
