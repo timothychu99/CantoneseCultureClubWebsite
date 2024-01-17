@@ -1,0 +1,52 @@
+div.event-content {
+  grid-column: span 20; 
+  margin-left: 1.5rem;
+}
+
+div.event-tab{
+  grid-column: span 10;
+}
+
+.posters{
+  width: 100%;
+}
+
+
+@media screen and (max-width : 800px) {
+  div.event-content {
+    grid-column: span 30;
+    margin-left: 0; 
+ }
+
+  div.event-tab{
+    grid-column: span 30;
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+  body {
+      background: #fff;
+      border-top: 2px solid #DDDDDD;
+  }
+}
+
+
+
+
+/*
+@media (max-width: 768px) {
+    #big_img {
+      max-width: 29rem;
+    }
+    .event-content .row {
+      display: flex;
+      display: -ms-flex;
+      flex-direction: column;
+    }
+    .event-content .row .first {
+      order: 2;
+      margin: auto;
+      width: 100%;
+    }
+  }
+  */
