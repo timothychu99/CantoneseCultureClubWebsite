@@ -1,10 +1,10 @@
 div.event-content {
-  grid-column: span 20; 
+  grid-column: span 15; 
   margin-left: 1.5rem;
 }
 
 div.event-tab{
-  grid-column: span 10;
+  grid-column: span 15;
 }
 
 .posters{
