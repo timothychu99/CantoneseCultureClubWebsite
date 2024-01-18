@@ -16,6 +16,11 @@ img.img_trunc {
     display: none;
 }
 
+.center_img {
+    visibility: hidden;
+    margin-top: -1.5rem;
+}
+
 @media screen and (max-width: 1750px) {
     div.about-content {
         grid-column: span 30; 
@@ -44,8 +49,14 @@ img.img_trunc {
         animation-timing-function: ease;
         animation-fill-mode: forwards;
       }
+
+      .center_img {
+        visibility: hidden;
+        margin-top:-1.5rem;
+      }
 }
 
+@media screen and (min-width: 800px) {
   .img_trunc {
     animation:goout 1.5s;
     animation-timing-function:ease-out;
@@ -58,6 +69,13 @@ img.img_trunc {
     -webkit-animation-delay:1.2s;
     -webkit-animation-fill-mode: forwards, none;
   }
+
+  .center_img {
+    visibility: visible;
+    top: 0;
+  }
+}
+
 
   @keyframes goout {
     0% {
