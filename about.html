@@ -67,15 +67,45 @@
 
     <div class="content">
 
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000" style="background-color: rgb(255, 249, 216);">
+                <img class="center" src="img/AboutPhoto1.jpg" style="width: 75%; height: 50%;"></img>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000" style="background-color: rgb(255, 249, 216);">
+                <img class="center" src="img/AboutPhoto2.jpg" style="width: 75%; height: 50%;"></img>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000" style="background-color: rgb(255, 249, 216);">
+                <img class="center" src="img/AboutPhoto3.png" style="width: 75%; height: 50%;"></img>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000" style="background-color: rgb(255, 249, 216);">
+                <img class="center"src="img/AboutPhoto4.jpg" style="width: 75%; height: 50%;"></img>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000" style="background-color: rgb(255, 249, 216);">
+                <img class="center" src="img/AboutPhoto5.jpg" style="width: 75%; height: 50%;"></img>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" style="opacity: 70%;">
+              <span style="background-color: rgb(0, 0, 0); padding: 15%; border-radius: 50px; border: solid; border-color: black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" style="opacity: 70%;">
+              <span style="background-color: rgb(0, 0, 0); padding: 15%; border-radius: 50px; border: solid; border-color: black;" class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <div class="spacer" style="background-image: linear-gradient(to bottom, rgb(255, 249, 216), rgb(255, 255, 255));"></div>
+
         <div class="grid text-left" style="--bs-columns: 30; --bs-gap: .5rem;">
-            <div class="dimsum_img">
+            <!-- <div class="dimsum_img">
                 <img src="img/DimSum1.jpg" class="img_full"></img>
                 <img id="down_arrow" src="img/DimSum2.jpg" class="img_trunc"></img>
 
                 <a onclick="ani()" class="fa">
                     <img class="center_img arrow" src="img/down_arrow.png" alt="down_arrow" width="60rem" height="35rem">
                 </a>
-            </div>
+            </div> -->
     
             <div class="about-content">
                 <h1> About </h1>
@@ -117,16 +147,19 @@
                 </div>    
                 <div class="footer-right" style="margin: 1rem 1rem 1rem 1rem">  
                     <!---SOCIAL MEDIA BUTTONS-->
-                    <a href="https://www.instagram.com/ccc_ucsd/" class="footer-item fa">
+                    <a href="https://www.instagram.com/ccc_ucsd/" class="footer-item fa" target="_blank">
                         <img src="img/instagram_icon.png" alt="instagram link" width="25rem" height="25rem">
                     </a>
-                    <a href="https://discord.com/invite/zkukkCjhxf" class="footer-item fa">
+                    <a href="https://discord.com/invite/zkukkCjhxf" class="footer-item fa" target="_blank">
                         <img src="img/discord_icon.jpg" alt="discord link" width="42rem" height="25rem">
                     </a>
-                    <a href="https://chat.whatsapp.com/La7M1U8dJNK8mNbqNuifav" class="footer-item fa">
+                    <a href="https://open.spotify.com/playlist/6I4vCljKheibVlVE4dUHy5?si=xFTowV3DQHSqiZdVNqG2Gg&pi=u-Onp3ENK3T6yj" class="footer-item fa" target="_blank">
+                        <img src="img/spotify_icon.png" alt="linktree link" width="27rem" height="27rem">
+                    </a>
+                    <a href="https://chat.whatsapp.com/La7M1U8dJNK8mNbqNuifav" class="footer-item fa" target="_blank">
                     <img src="img/whatsapp_icon.png" alt="whatsapp link" width="27rem" height="27rem">
                     </a>
-                    <a href="https://linktr.ee/dhyumcha" class="footer-item fa">
+                    <a href="https://linktr.ee/dhyumcha" class="footer-item fa" target="_blank">
                         <img src="img/linktree_icon.png" alt="linktree link" width="27rem" height="27rem">
                     </a>
                 </div>
