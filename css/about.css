@@ -110,3 +110,14 @@ img.img_trunc {
     display: none;
   }
 }
+
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spacer{
+  padding-top: 50px;
+}
