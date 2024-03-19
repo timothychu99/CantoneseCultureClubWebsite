@@ -27,6 +27,7 @@ img.img_trunc {
 }
 
 @media screen and (max-width: 1750px) {
+
     div.dimsum_img {
         grid-column: span 30;
     }

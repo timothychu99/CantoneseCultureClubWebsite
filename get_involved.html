@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
-  
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/contacts.css">  
     <!--Poppins_Light_300-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +55,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="events.html">Events</a>
                 </li>
-
                 <li class="nav-item-plain dropdown-show">
                     <div class="dropdown">
                       <button class="btn btn-primary dropdown-toggle" style="background-color: white; color: black; border-color: black; margin-top: 1.15rem; margin-left: .5rem;" type="button" data-toggle="dropdown"> Join Us
@@ -66,7 +64,7 @@
                             <a class="nav-link" href="contacts.html">Contact Us</a>
                         </li>
                         <li class="nav-item-small">
-                            <a class="nav-link" href="get_involved.html">Get Involved</a>
+                            <a class="nav-link" href="contacts.html">Get Involved</a>
                         </li>        
                     </ul>
                     </div>
@@ -76,7 +74,7 @@
                     <a class="nav-link" href="contacts.html">Contact Us</a>
                 </li>
                 <li class="nav-item dropdown-hide">
-                    <a class="nav-link" href="get_involved.html">Get Involved</a>
+                    <a class="nav-link" href="contacts.html">Get Involved</a>
                 </li>    
                 </ul>
             </div>
@@ -86,62 +84,25 @@
 
     <div class="content">
 
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000" style="background-color: rgb(255, 249, 216);">
-                <img class="center carousel_size" src="img/AboutPhoto1.jpg"></img>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000" style="background-color: rgb(255, 249, 216);">
-                <img class="center carousel_size" src="img/AboutPhoto2.jpg"></img>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000" style="background-color: rgb(255, 249, 216);">
-                <img class="center carousel_size" src="img/AboutPhoto3.png"></img>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000" style="background-color: rgb(255, 249, 216);">
-                <img class="center carousel_size"src="img/AboutPhoto4.jpg"></img>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000" style="background-color: rgb(255, 249, 216);">
-                <img class="center carousel_size" src="img/AboutPhoto5.jpg"></img>
-              </div>
+        <div class="grid text-" style="--bs-columns: 30; --bs-gap: .5rem;">
+            <div class="food_img">
+                <img src="img/DimSumFood.jpg" style="width: 100%;"></img>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" style="opacity: 70%;">
-              <span style="background-color: rgb(0, 0, 0); padding: 15%; border-radius: 50px; border: solid; border-color: black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" style="opacity: 70%;">
-              <span style="background-color: rgb(0, 0, 0); padding: 15%; border-radius: 50px; border: solid; border-color: black;" class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-        <div class="spacer" style="background-image: linear-gradient(to bottom, rgb(255, 249, 216), rgb(255, 255, 255));"></div>
-
-        <div class="grid text-left" style="--bs-columns: 30; --bs-gap: .5rem;">
-            <!-- <div class="dimsum_img">
-                <img src="img/DimSum1.jpg" class="img_full"></img>
-                <img id="down_arrow" src="img/DimSum2.jpg" class="img_trunc"></img>
-
-                <a onclick="ani()" class="fa">
-                    <img class="center_img arrow" src="img/down_arrow.png" alt="down_arrow" width="60rem" height="35rem">
-                </a>
-            </div> -->
-    
-            <div class="about-content">
-                <h1> About </h1>
-                    <p>
-                    CCC @ UCSD is a cultural based club that welcomes all UCSD students, both undergraduates and graduates.
-                    <br><br>
-                    We are a safe community that encourages everyone to learn about the Cantonese culture and language. Our alternative name is DHYC, which is the abbreviation for Duck Han Yum Cha, meaning let's go Yum Cha when we're free. Our goals are to host events that will be centered around Cantonese culture and to meet for Yum Cha to socialize with each other.
-                    <br><br>
-                    Our club welcomes every UCSD student from all backgrounds and levels of proficiency in Cantonese (including those that don't speak the language). Our Community Mentor, Chen Laoshi teaches the Cantonese courses (LIHL 118 & 138) at UCSD! 
-                    <br><br>
-                    </p>
-                <h1> How It Started </h1>
-                    <p>
-                    In Spring 2023, Chen Losi (Areana Chen) invited UCSD students to participate in a dragon boat competition. Our club’s founders Hillary Chew, Tim Chu, and Mia Wu met at one of the Dragon Boat practice and decided to establish a club where students can learn and embrace Cantonese Culture and the language. 
-                    <br><br>
-                    In Fall 2023, Cantonese Culture Club was officially approved and established. 
-                    </p>
+            
+            <div class="contact_content" style="margin: 1.5rem;">
+        
+                <h1>Get Involved</h1>
+                
+                <div style="margin: 1rem 1.5rem 1.5rem 1rem; padding: 2.5% 0;">
+                    <h2>Recruitment Form!!!  </h2>
+                    
+                    <a href="https://docs.google.com/forms/u/1/d/1_6FIlQcwNMTgeDyfShRZKkGYjVWYESE0JnGoszWrebw/edit?usp=drive_web" target="_blank">Form Link</a> 
+                    *Use UCSD email to sign in
+                    <br>
+                    <br>
+                    <h2>Our Constitution:</h2>
+                    <a href="https://docs.google.com/document/d/1BFBBWhJ5ez4SWc3WG4th3TBkcUgco6RNshrFCYIzLk0/edit?usp=sharing" target="_blank">Constitution Link</a>
+                </div>
             </div>
         </div>
     </div>
