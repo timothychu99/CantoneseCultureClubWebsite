@@ -8,7 +8,11 @@
 }
 
 .board_content{
-    padding: 3% 7% 3% 7%
+    padding: 1.5rem 7% 1.5rem 7%;
+}
+
+.board_img{
+  padding: -.5% .5% .5% .5%
 }
 
 @media screen and (max-width: 701px) {
